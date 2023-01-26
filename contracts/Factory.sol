@@ -2,9 +2,10 @@
 pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/ClonesUpgradeable.sol";
+import "@openzeppelin/contracts/proxy/Clones.sol";
 
 import "./ERC721Collection.sol";
+import "./NFTCollection.sol";
 
 contract Factory is AccessControl {
     address public implementation;
@@ -29,8 +30,15 @@ contract Factory is AccessControl {
     }
 
     function createCollection(address _owner) external onlyRole(DEFAULT_ADMIN_ROLE) {
-        address collection = ClonesUpgradeable.clone(implementation);
+        address collection = Clones.clone(implementation);
+        ERC721Collection(collection).initialize(_owner);
 
         emit CollectionCreated(collection, _owner, msg.sender);
+    }
+
+    function createCollectionStandard(address _owner) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        NFTCollection collection = new NFTCollection();
+
+        emit CollectionCreated(address(collection), _owner, msg.sender);
     }
 }
