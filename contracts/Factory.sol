@@ -5,7 +5,6 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/proxy/Clones.sol";
 
 import "./ERC721Collection.sol";
-import "./NFTCollection.sol";
 
 contract Factory is AccessControl {
     address public implementation;
@@ -34,11 +33,5 @@ contract Factory is AccessControl {
         ERC721Collection(collection).initialize(_owner);
 
         emit CollectionCreated(collection, _owner, msg.sender);
-    }
-
-    function createCollectionStandard(address _owner) external onlyRole(DEFAULT_ADMIN_ROLE) {
-        NFTCollection collection = new NFTCollection();
-
-        emit CollectionCreated(address(collection), _owner, msg.sender);
     }
 }
