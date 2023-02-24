@@ -2,7 +2,7 @@ import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { task } from "hardhat/config";
 import { TaskArguments } from "hardhat/types";
 
-import StdFactoryArtifact from "../artifacts/contracts/StandardFactory.sol/StandardFactory.json";
+import StdFactoryArtifact from "../artifacts/contracts/StandardFactory/StandardFactory.sol/StandardFactory.json";
 
 task("createCollectionStd", "Create a new collection with the standard factory pattern")
   .addParam("factory", "Factory contract address")

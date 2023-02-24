@@ -1,0 +1,58 @@
+Costo gas
+
+1) std factory ERC721
+2) clone factory ERC721
+3) clone factory ERC721A
+
+deploy master copy + deploy collection + mint (primo + successivi n)
+----------------------------------------------
+0	+ 1297362	+ 71323	+ (54235) * n
+1592033 + 168073	+ 73976	+ (56888) * n
+1852682 + 191786	+ 97192	+ (62992) * n
+
+
+
+
+
+1 vs 2
+
+1) std factory ERC721
+2) clone factory ERC721
+
+deploy master copy + deploy collection + mint (primo + successivi n)
+----------------------------------------------
+0	+ 1297362	+ 71335	+ (54235) * n
+1592033 + 168074	+ 73988	+ (56888) * n
+
+rapporto tra i costi:
+- costo deploy = 13%
+- costo mint = +2653 gas
+
+senza contare il deploy master copy:
+n = 1126635 / 2653 = 424.7 mint
+n > 424 --> per più di 424 mint a collezione conviene usare una factory normale
+
+
+con n = 100 mint per collezione
+poniamo x = numero collezioni per ammortizzare deploy master copy
+----------------------------------------------
+0	+ 1297362 * x	+ 71335	+ (54235) * 100
+1592033 + 168074 * x	+ 73988	+ (56888) * 100
+
+x = 1859986 / 1129288 = 1.6
+n > 1 per ammortizzare il costo della master copy con 100 mint a collezione
+
+
+
+
+
+2 vs 3
+
+2) clone factory ERC721
+3) clone factory ERC721A
+
+
+deploy master copy + deploy collection + mint (primo + successivi n)
+----------------------------------------------
+1592033 + 168073	+ 73976	+ (56888) * n
+1852682 + 191786	+ 97192	+ (62992) * n

@@ -80,9 +80,11 @@
     "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"test/**/*.ts\" && yarn typechain",
     "deploy": "hardhat deploy:Contracts --network localhost",
     "create-collection": "hardhat createCollection --factory 0xdFB9d27B88d668CF662a204e2B20D3DF3fb66D66 --network localhost",
-    "create-collection-std": "hardhat createCollectionStd --factory 0x60bB69158D61EecB1f056312937D5F71bfF176B0 --network localhost",
-    "mint-std": "hardhat mint --collection 0xcBf91a0DF071aF979e2742ccB4dBD5e40e5c110c --network localhost",
-    "mint-clone": "hardhat mint --collection 0xeee06a24B14a5D379dBA73C82332c78E266f3185 --network localhost",
+    "create-collection-A": "hardhat createCollectionA --factory 0xb47bFCEc473596372cE0fdEFD23AD1075D492BDa --network localhost",
+    "create-collection-std": "hardhat createCollectionStd --factory 0x1b150337f152A80C649F72bA78b6c45243Cad63b --network localhost",
+    "mint": "hardhat mint --collection 0xeee06a24B14a5D379dBA73C82332c78E266f3185 --network localhost",
+    "mint-A": "hardhat mintA --collection 0x2a835DeF4E7b9917DC49eA6B64Fb326e0B489ac9 --network localhost",
+    "mint-std": "hardhat mint --collection 0xD9F12E6349acf047061F7B2F3173972D54e838F6 --network localhost",
     "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
     "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
     "lint:ts": "eslint --ignore-path ./.eslintignore --ext .js,.ts .",
@@ -91,11 +93,13 @@
     "prepublishOnly": "pinst --disable",
     "prettier:check": "prettier --check \"**/*.{js,json,md,sol,ts,yml}\"",
     "prettier:write": "prettier --write \"**/*.{js,json,md,sol,ts,yml}\"",
+    "setup-environment": "yarn deploy && yarn create-collection && yarn create-collection-A && yarn create-collection-std",
     "test": "hardhat test",
     "typechain": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat typechain"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.1",
-    "@openzeppelin/contracts-upgradeable": "^4.8.1"
+    "@openzeppelin/contracts-upgradeable": "^4.8.1",
+    "erc721a-upgradeable": "^4.2.3"
   }
 }
