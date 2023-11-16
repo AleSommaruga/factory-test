@@ -3,6 +3,7 @@ import { task } from "hardhat/config";
 import { TaskArguments } from "hardhat/types";
 
 import FactoryArtifact from "../artifacts/contracts/ERC721A/ERC721AFactory.sol/ERC721AFactory.json";
+import { ERC721AFactory } from "../types";
 
 task("createCollectionA", "Create a new collection with ERC721A")
   .addParam("factory", "Factory contract address")
@@ -12,7 +13,7 @@ task("createCollectionA", "Create a new collection with ERC721A")
 
     const provider = new ethers.providers.JsonRpcProvider("http://127.0.0.1:8545/");
 
-    const nftCollectionsFactory = new ethers.Contract(_taskArgs.factory, FactoryArtifact.abi, provider);
+    const nftCollectionsFactory = <ERC721AFactory>new ethers.Contract(_taskArgs.factory, FactoryArtifact.abi, provider);
 
     const tx = await nftCollectionsFactory.connect(admin).createCollection(admin.address);
 
@@ -20,6 +21,7 @@ task("createCollectionA", "Create a new collection with ERC721A")
     const nftCollectionProxyAddress = receipt.events
       ? receipt?.events[receipt.events.length - 1]?.args?.collection
       : ethers.constants.AddressZero;
+    // console.log("🚀 ~ file: createCollectionA.ts:21 ~ receipt.events:", receipt.events);
 
     console.log("NFTCollection Proxy (ERC721A) deployed to: ", nftCollectionProxyAddress);
   });
