@@ -1,0 +1,29 @@
+Analisi 721A
+
+test
+- deploy master copy 721A, factory, collezione 721A
+- mint N NFT in batch
+- permutazioni per l’ordine di trasferimento
+- trasferimento a uno stesso address/tutti diversi address
+
+Single receiver
+costo max e min SINGOLI trasferimenti
+- in generale trasferimento più costoso con tokenId = N-2 per primo (secondo tokenId più alto) (costo max con N=3, …, 6 aumentano linearmente 108633, 110833, 113033, 115233…)
+- trasferimento meno costoso con tokenId 0 successivamente all’avvenuto trasferimento del tokenId 1 (min gas fisso a 49836 indipendentemente da N > 1)
+
+costo max e min TOTALE trasferimenti
+- somma gas totale più costosa per il pattern [N, N-1, …, 2, 0, 1]
+- somma gas totale meno costosa con il pattern: [1, 0, 3, 2, 5, 4…] o [1, 0, 3, 2, 4] per N pari 
+
+Multiple receivers
+
+costo max e min SINGOLI trasferimenti
+- in generale trasferimento più costoso con tokenId = N-2 per primo (secondo tokenId più alto) (costo max con N=3, …, 6 aumentano linearmente 108633, 110833, 113033, 115233…)
+- trasferimento meno costoso se sono già stati trasferiti a un altro address i tokenId precedente e successivo (e.g., tokenId 0 dopo l’avvenuto trasferimento del tokenId 1. Costi di molto poco superiori ,~10 gas, per trasferire e.g., tokenId 1 con 0 e 2 già trasferiti): min gas fisso a 66924/66936 (arbitrariamente a seconda delle esecuzioni, sospetto sia dovuto all’address)
+
+costo max e min TOTALE trasferimenti
+- somma gas totale più costosa per il pattern [N, N-1, …, 2, 0, 1]
+- somma gas totale meno costosa con il pattern: [1, 0, 3, 2, 5, 4…] o [1, 0, 3, 2, 4] per N pari 
+
+Every N > 12940 causes an error "Error: Transaction reverted and Hardhat couldn't infer the reason.",
+probably dued to surpassing the block gas limit of 30M.

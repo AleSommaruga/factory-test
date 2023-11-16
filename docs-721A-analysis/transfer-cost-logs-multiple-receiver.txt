@@ -1,0 +1,1333 @@
+N = 3
+🚀 ~ maxSumGas: 247435
+🚀 ~ minSumGas: 244660
+🚀 ~ maxGas: 108633
+🚀 ~ minGas: 66924
+-
+🚀 ~ maxSumGasPerm: [ 0, 1, 2 ]
+🚀 ~ minSumGasPerm: [ 0, 2, 1 ]
+-
+🚀 ~ maxGasPerm: [ 1, 0, 2 ]
+🚀 ~ minGasPerm: [ 1, 0, 2 ]
+
+
+N = 4
+🚀 ~ maxSumGas: 339_663
+🚀 ~ minSumGas: 331_063
+🚀 ~ maxGas: 110_833
+🚀 ~ minGas:  66_924
+-
+🚀 ~ maxSumGasPerm: [ 3, 2, 0, 1 ]
+🚀 ~ minSumGasPerm: [ 1, 0, 3, 2 ]
+-
+🚀 ~ maxGasPerm: [ 2, 1, 0, 3 ]
+🚀 ~ minGasPerm: [ 1, 0, 2, 3 ]
+
+
+N = 5
+🚀 ~ maxSumGas: 434_678
+🚀 ~ minSumGas: 420_241
+🚀 ~ maxGas: 113_033
+🚀 ~ minGas:  66_924
+-
+🚀 ~ maxSumGasPerm: [ 4, 3, 2, 0, 1 ]
+🚀 ~ minSumGasPerm: [ 0, 2, 4, 1, 3 ]
+-
+🚀 ~ maxGasPerm: [ 3, 1, 2, 0, 4 ]
+🚀 ~ minGasPerm: [ 1, 2, 3, 4, 0 ]
+
+
+N = 6
+🚀 ~ maxSumGas: 531_881
+🚀 ~ minSumGas: 506_644
+🚀 ~ maxGas: 115_233
+🚀 ~ minGas:  66_924
+-
+🚀 ~ maxSumGasPerm: [ 5, 4, 3, 2, 0, 1 ]
+🚀 ~ minSumGasPerm: [ 1, 0, 3, 2, 5, 4 ]
+-
+🚀 ~ maxGasPerm: [ 4, 1, 2, 3, 0, 5 ]
+🚀 ~ minGasPerm: [ 1, 0, 5, 2, 4, 3 ]
+
+
+N = 7
+🚀 ~ maxSumGas: 631_272
+🚀 ~ minSumGas: 595_834
+🚀 ~ maxGas: 117_433
+🚀 ~ minGas:  66_936
+
+N = 10
+🚀 ~ maxSumGas: 942_681
+🚀 ~ minSumGas: 857_818
+🚀 ~ maxGas: 124_033
+🚀 ~ minGas:  66_936
+
+N = 100
+🚀 ~ maxSumGas: 19_491_843
+🚀 ~ minSumGas:  8_758_843
+🚀 ~ maxGas: 322_033
+🚀 ~ minGas:  66_936
+
+N = 500
+🚀 ~ maxSumGas: 317_535_587
+🚀 ~ minSumGas:  43_877_719
+🚀 ~ maxGas: 1_202_045
+🚀 ~ minGas:    66_936
+
+N = 1000
+🚀 ~ maxSumGas: 1_185_092_727
+🚀 ~ minSumGas:    87_778_321
+🚀 ~ maxGas: 2_302_045
+🚀 ~ minGas:    66_936
+
+N = 2000
+🚀 ~ maxSumGas: 4_570_206_695
+🚀 ~ minSumGas:   175_579_945
+🚀 ~ maxGas: 4_502_045
+🚀 ~ minGas:    66_924
+
+N = 10000
+🚀 ~ estimated maxSumGas: 110_844_905_000
+🚀 ~ estimated minSumGas:     334_680_000
+🚀 ~ maxGas: 22_102_045
+🚀 ~ minGas:     66_936
+
+N = 12000
+🚀 ~ estimated maxSumGas: 159_413_886_000
+🚀 ~ estimated minSumGas:     401_616_000
+🚀 ~ maxGas: 26_502_045
+🚀 ~ minGas: 66_936
+
+N = 12940
+🚀 ~ estimated maxSumGas: 185_281_267_070
+🚀 ~ estimated minSumGas: 433_075_920
+🚀 ~ maxGas: 28_570_045
+🚀 ~ minGas: 66_936
+
+Every N > 12940 causes an error "Error: Transaction reverted and Hardhat couldn't infer the reason.",
+probably due to surpassing the block gas limit of 30M.
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------
+
+
+N = 4
+complete logs
+
+  Unit tests
+    721A
+🚀 ~ deploy721AFixture ~ masterCopyA: 0x310Dc9831Bb8E34B43B803DEB1463443575CfcEd
+🚀 ~ deploy721AFixture ~ factoryA: 0xdFB9d27B88d668CF662a204e2B20D3DF3fb66D66
+🚀 ~ deploy721AFixture ~ collectionA: 0xeee06a24B14a5D379dBA73C82332c78E266f3185
+Permut 0 : [ 0, 1, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 336625
+      ✓ should mint with gas reported 0
+Permut 1 : [ 0, 1, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 333850
+      ✓ should mint with gas reported 1
+Permut 2 : [ 0, 2, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 333850
+      ✓ should mint with gas reported 2
+Permut 3 : [ 0, 2, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 333838
+      ✓ should mint with gas reported 3
+Permut 4 : [ 0, 3, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88391
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 335263
+      ✓ should mint with gas reported 4
+Permut 5 : [ 0, 3, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 336050
+      ✓ should mint with gas reported 5
+Permut 6 : [ 1, 0, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 333850
+      ✓ should mint with gas reported 6
+Permut 7 : [ 1, 0, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 331075
+      ✓ should mint with gas reported 7
+Permut 8 : [ 1, 2, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 333850
+      ✓ should mint with gas reported 8
+Permut 9 : [ 1, 2, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 333850
+      ✓ should mint with gas reported 9
+Permut 10 : [ 1, 3, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 331075
+      ✓ should mint with gas reported 10
+Permut 11 : [ 1, 3, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 331075
+      ✓ should mint with gas reported 11
+Permut 12 : [ 2, 1, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69091
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 335263
+      ✓ should mint with gas reported 12
+Permut 13 : [ 2, 1, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 335275
+      ✓ should mint with gas reported 13
+Permut 14 : [ 2, 0, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89154
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 336038
+      ✓ should mint with gas reported 14
+Permut 15 : [ 2, 0, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 336050
+      ✓ should mint with gas reported 15
+Permut 16 : [ 2, 3, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 336050
+      ✓ should mint with gas reported 16
+Permut 17 : [ 2, 3, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 335275
+      ✓ should mint with gas reported 17
+Permut 18 : [ 3, 1, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 335475
+      ✓ should mint with gas reported 18
+Permut 19 : [ 3, 1, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 335475
+      ✓ should mint with gas reported 19
+Permut 20 : [ 3, 2, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 338900
+      ✓ should mint with gas reported 20
+Permut 21 : [ 3, 2, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90591
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 339663
+      ✓ should mint with gas reported 21
+Permut 22 : [ 3, 0, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 337475
+      ✓ should mint with gas reported 22
+Permut 23 : [ 3, 0, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 338250
+-
+🚀 ~ maxSumGas: 339663
+🚀 ~ minSumGas: 331075
+🚀 ~ maxGas: 110833
+🚀 ~ minGas: 66936
+-
+🚀 ~ maxSumGasPerm: [ 3, 2, 0, 1 ]
+🚀 ~ minSumGasPerm: [ 1, 0, 3, 2 ]
+-
+🚀 ~ maxGasPerm: [ 2, 1, 0, 3 ]
+🚀 ~ minGasPerm: [ 0, 2, 3, 1 ]
+      ✓ should mint with gas reported 23
+
+·------------------------------------------|---------------------------|-------------|-----------------------------·
+|           Solc version: 0.8.17           ·  Optimizer enabled: true  ·  Runs: 800  ·  Block limit: 30000000 gas  │
+···········································|···························|·············|······························
+|  Methods                                                                                                         │
+······················|····················|·············|·············|·············|···············|··············
+|  Contract           ·  Method            ·  Min        ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
+······················|····················|·············|·············|·············|···············|··············
+|  ERC721ACollection  ·  mint              ·          -  ·          -  ·     102991  ·            1  ·          -  │
+······················|····················|·············|·············|·············|···············|··············
+|  ERC721AFactory     ·  createCollection  ·          -  ·          -  ·     191786  ·            2  ·          -  │
+······················|····················|·············|·············|·············|···············|··············
+|  ERC721Upgradeable  ·  safeTransferFrom  ·      66936  ·     110833  ·      83786  ·          192  ·          -  │
+······················|····················|·············|·············|·············|···············|··············
+|  Deployments                             ·                                         ·  % of limit   ·             │
+···········································|·············|·············|·············|···············|··············
+|  ERC721ACollection                       ·          -  ·          -  ·    1852682  ·        6.2 %  ·          -  │
+···········································|·············|·············|·············|···············|··············
+|  ERC721AFactory                          ·          -  ·          -  ·     703394  ·        2.3 %  ·          -  │
+·------------------------------------------|-------------|-------------|-------------|---------------|-------------·
+
+  24 passing (8s)
+
+
+
+N = 5
+  Unit tests
+    721A
+🚀 ~ deploy721AFixture ~ masterCopyA: 0x310Dc9831Bb8E34B43B803DEB1463443575CfcEd
+🚀 ~ deploy721AFixture ~ factoryA: 0xdFB9d27B88d668CF662a204e2B20D3DF3fb66D66
+🚀 ~ deploy721AFixture ~ collectionA: 0xeee06a24B14a5D379dBA73C82332c78E266f3185
+Permut 0 : [ 0, 1, 2, 3, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425803
+      ✓ should mint with gas reported 0
+Permut 1 : [ 0, 1, 2, 4, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 1
+Permut 2 : [ 0, 1, 3, 2, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423016
+      ✓ should mint with gas reported 2
+Permut 3 : [ 0, 1, 3, 4, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 3
+Permut 4 : [ 0, 1, 4, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424453
+      ✓ should mint with gas reported 4
+Permut 5 : [ 0, 1, 4, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 5
+Permut 6 : [ 0, 2, 1, 3, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 6
+Permut 7 : [ 0, 2, 1, 4, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 7
+Permut 8 : [ 0, 2, 3, 1, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 8
+Permut 9 : [ 0, 2, 3, 4, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 9
+Permut 10 : [ 0, 2, 4, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 10
+Permut 11 : [ 0, 2, 4, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420241
+      ✓ should mint with gas reported 11
+Permut 12 : [ 0, 3, 2, 1, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89154
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424429
+      ✓ should mint with gas reported 12
+Permut 13 : [ 0, 3, 2, 4, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69091
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424441
+      ✓ should mint with gas reported 13
+Permut 14 : [ 0, 3, 1, 2, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 14
+Permut 15 : [ 0, 3, 1, 4, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 15
+Permut 16 : [ 0, 3, 4, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425216
+      ✓ should mint with gas reported 16
+Permut 17 : [ 0, 3, 4, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88391
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424441
+      ✓ should mint with gas reported 17
+Permut 18 : [ 0, 4, 2, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424653
+      ✓ should mint with gas reported 18
+Permut 19 : [ 0, 4, 2, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424653
+      ✓ should mint with gas reported 19
+Permut 20 : [ 0, 4, 3, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428078
+      ✓ should mint with gas reported 20
+Permut 21 : [ 0, 4, 3, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428853
+      ✓ should mint with gas reported 21
+Permut 22 : [ 0, 4, 1, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426653
+      ✓ should mint with gas reported 22
+Permut 23 : [ 0, 4, 1, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92958
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 427428
+      ✓ should mint with gas reported 23
+Permut 24 : [ 1, 0, 2, 3, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 24
+Permut 25 : [ 1, 0, 2, 4, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108621
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420241
+      ✓ should mint with gas reported 25
+Permut 26 : [ 1, 0, 3, 2, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69091
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420241
+      ✓ should mint with gas reported 26
+Permut 27 : [ 1, 0, 3, 4, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69091
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420241
+      ✓ should mint with gas reported 27
+Permut 28 : [ 1, 0, 4, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421678
+      ✓ should mint with gas reported 28
+Permut 29 : [ 1, 0, 4, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422453
+      ✓ should mint with gas reported 29
+Permut 30 : [ 1, 2, 0, 3, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 30
+Permut 31 : [ 1, 2, 0, 4, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 31
+Permut 32 : [ 1, 2, 3, 0, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423028
+      ✓ should mint with gas reported 32
+Permut 33 : [ 1, 2, 3, 4, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66924
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 423016
+      ✓ should mint with gas reported 33
+Permut 34 : [ 1, 2, 4, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 34
+Permut 35 : [ 1, 2, 4, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 35
+Permut 36 : [ 1, 3, 2, 0, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 36
+Permut 37 : [ 1, 3, 2, 4, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 37
+Permut 38 : [ 1, 3, 0, 2, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 38
+Permut 39 : [ 1, 3, 0, 4, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 39
+Permut 40 : [ 1, 3, 4, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108621
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420241
+      ✓ should mint with gas reported 40
+Permut 41 : [ 1, 3, 4, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 420253
+      ✓ should mint with gas reported 41
+Permut 42 : [ 1, 4, 2, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108621
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422441
+      ✓ should mint with gas reported 42
+Permut 43 : [ 1, 4, 2, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422453
+      ✓ should mint with gas reported 43
+Permut 44 : [ 1, 4, 3, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421678
+      ✓ should mint with gas reported 44
+Permut 45 : [ 1, 4, 3, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421678
+      ✓ should mint with gas reported 45
+Permut 46 : [ 1, 4, 0, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421678
+      ✓ should mint with gas reported 46
+Permut 47 : [ 1, 4, 0, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90758
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422453
+      ✓ should mint with gas reported 47
+Permut 48 : [ 2, 1, 0, 3, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88391
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424441
+      ✓ should mint with gas reported 48
+Permut 49 : [ 2, 1, 0, 4, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421678
+      ✓ should mint with gas reported 49
+Permut 50 : [ 2, 1, 3, 0, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424453
+      ✓ should mint with gas reported 50
+Permut 51 : [ 2, 1, 3, 4, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424453
+      ✓ should mint with gas reported 51
+Permut 52 : [ 2, 1, 4, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88391
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421666
+      ✓ should mint with gas reported 52
+Permut 53 : [ 2, 1, 4, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421678
+      ✓ should mint with gas reported 53
+Permut 54 : [ 2, 0, 1, 3, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 54
+Permut 55 : [ 2, 0, 1, 4, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422453
+      ✓ should mint with gas reported 55
+Permut 56 : [ 2, 0, 3, 1, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 56
+Permut 57 : [ 2, 0, 3, 4, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 57
+Permut 58 : [ 2, 0, 4, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110821
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422441
+      ✓ should mint with gas reported 58
+Permut 59 : [ 2, 0, 4, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110821
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422429
+      ✓ should mint with gas reported 59
+Permut 60 : [ 2, 3, 0, 1, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 60
+Permut 61 : [ 2, 3, 0, 4, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 61
+Permut 62 : [ 2, 3, 1, 0, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424453
+      ✓ should mint with gas reported 62
+Permut 63 : [ 2, 3, 1, 4, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424453
+      ✓ should mint with gas reported 63
+Permut 64 : [ 2, 3, 4, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424453
+      ✓ should mint with gas reported 64
+Permut 65 : [ 2, 3, 4, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 425228
+      ✓ should mint with gas reported 65
+Permut 66 : [ 2, 4, 0, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422453
+      ✓ should mint with gas reported 66
+Permut 67 : [ 2, 4, 0, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422441
+      ✓ should mint with gas reported 67
+Permut 68 : [ 2, 4, 3, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110821
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 422441
+      ✓ should mint with gas reported 68
+Permut 69 : [ 2, 4, 3, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110821
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421666
+      ✓ should mint with gas reported 69
+Permut 70 : [ 2, 4, 1, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88546
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421666
+      ✓ should mint with gas reported 70
+Permut 71 : [ 2, 4, 1, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88558
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 421678
+      ✓ should mint with gas reported 71
+Permut 72 : [ 3, 1, 2, 0, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424653
+      ✓ should mint with gas reported 72
+Permut 73 : [ 3, 1, 2, 4, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108621
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424641
+      ✓ should mint with gas reported 73
+Permut 74 : [ 3, 1, 0, 2, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424653
+      ✓ should mint with gas reported 74
+Permut 75 : [ 3, 1, 0, 4, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66924
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69091
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424629
+      ✓ should mint with gas reported 75
+Permut 76 : [ 3, 1, 4, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108621
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424629
+      ✓ should mint with gas reported 76
+Permut 77 : [ 3, 1, 4, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424653
+      ✓ should mint with gas reported 77
+Permut 78 : [ 3, 2, 1, 0, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428078
+      ✓ should mint with gas reported 78
+Permut 79 : [ 3, 2, 1, 4, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90591
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88391
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69091
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428042
+      ✓ should mint with gas reported 79
+Permut 80 : [ 3, 2, 0, 1, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428853
+      ✓ should mint with gas reported 80
+Permut 81 : [ 3, 2, 0, 4, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428853
+      ✓ should mint with gas reported 81
+Permut 82 : [ 3, 2, 4, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428853
+      ✓ should mint with gas reported 82
+Permut 83 : [ 3, 2, 4, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428078
+      ✓ should mint with gas reported 83
+Permut 84 : [ 3, 0, 2, 1, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113021
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426641
+      ✓ should mint with gas reported 84
+Permut 85 : [ 3, 0, 2, 4, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426653
+      ✓ should mint with gas reported 85
+Permut 86 : [ 3, 0, 1, 2, 4 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 427428
+      ✓ should mint with gas reported 86
+Permut 87 : [ 3, 0, 1, 4, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 427428
+      ✓ should mint with gas reported 87
+Permut 88 : [ 3, 0, 4, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89154
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 427416
+      ✓ should mint with gas reported 88
+Permut 89 : [ 3, 0, 4, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88391
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426641
+      ✓ should mint with gas reported 89
+Permut 90 : [ 3, 4, 2, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428853
+      ✓ should mint with gas reported 90
+Permut 91 : [ 3, 4, 2, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428078
+      ✓ should mint with gas reported 91
+Permut 92 : [ 3, 4, 0, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426653
+      ✓ should mint with gas reported 92
+Permut 93 : [ 3, 4, 0, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 427428
+      ✓ should mint with gas reported 93
+Permut 94 : [ 3, 4, 1, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66924
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424641
+      ✓ should mint with gas reported 94
+Permut 95 : [ 3, 4, 1, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 113033
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 69103
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 424653
+      ✓ should mint with gas reported 95
+Permut 96 : [ 4, 1, 2, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108621
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426841
+      ✓ should mint with gas reported 96
+Permut 97 : [ 4, 1, 2, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426853
+      ✓ should mint with gas reported 97
+Permut 98 : [ 4, 1, 3, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426078
+      ✓ should mint with gas reported 98
+Permut 99 : [ 4, 1, 3, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426078
+      ✓ should mint with gas reported 99
+Permut 100 : [ 4, 1, 0, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426078
+      ✓ should mint with gas reported 100
+Permut 101 : [ 4, 1, 0, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66924
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426841
+      ✓ should mint with gas reported 101
+Permut 102 : [ 4, 2, 1, 3, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428278
+      ✓ should mint with gas reported 102
+Permut 103 : [ 4, 2, 1, 0, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95146
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428266
+      ✓ should mint with gas reported 103
+Permut 104 : [ 4, 2, 3, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428278
+      ✓ should mint with gas reported 104
+Permut 105 : [ 4, 2, 3, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 429053
+      ✓ should mint with gas reported 105
+Permut 106 : [ 4, 2, 0, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 429041
+      ✓ should mint with gas reported 106
+Permut 107 : [ 4, 2, 0, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 110833
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 429053
+      ✓ should mint with gas reported 107
+Permut 108 : [ 4, 3, 2, 1, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92803
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 433903
+      ✓ should mint with gas reported 108
+Permut 109 : [ 4, 3, 2, 0, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92803
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 434678
+      ✓ should mint with gas reported 109
+Permut 110 : [ 4, 3, 1, 2, 0 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92803
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 430478
+      ✓ should mint with gas reported 110
+Permut 111 : [ 4, 3, 1, 0, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92803
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 430478
+      ✓ should mint with gas reported 111
+Permut 112 : [ 4, 3, 0, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92803
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 433253
+      ✓ should mint with gas reported 112
+Permut 113 : [ 4, 3, 0, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95146
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 92803
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88391
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 432454
+      ✓ should mint with gas reported 113
+Permut 114 : [ 4, 0, 2, 3, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426853
+      ✓ should mint with gas reported 114
+Permut 115 : [ 4, 0, 2, 1, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 108633
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 426853
+      ✓ should mint with gas reported 115
+Permut 116 : [ 4, 0, 3, 2, 1 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90603
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 430278
+      ✓ should mint with gas reported 116
+Permut 117 : [ 4, 0, 3, 1, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 90591
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 431041
+      ✓ should mint with gas reported 117
+Permut 118 : [ 4, 0, 1, 3, 2 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 88403
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66936
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 428829
+      ✓ should mint with gas reported 118
+Permut 119 : [ 4, 0, 1, 2, 3 ]
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 95158
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89166
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 89178
+🚀 ~ file: ERC721A.behavior.ts:23 ~ gas: 66948
+🚀 ~ file: ERC721A.behavior.ts:26 ~ sumGas: 429628
+-
+🚀 ~ maxSumGas: 434678
+🚀 ~ minSumGas: 420241
+🚀 ~ maxGas: 113033
+🚀 ~ minGas: 66924
+-
+🚀 ~ maxSumGasPerm: [ 4, 3, 2, 0, 1 ]
+🚀 ~ minSumGasPerm: [ 0, 2, 4, 1, 3 ]
+-
+🚀 ~ maxGasPerm: [ 3, 1, 2, 0, 4 ]
+🚀 ~ minGasPerm: [ 1, 2, 3, 4, 0 ]
+      ✓ should mint with gas reported 119
+
+·------------------------------------------|---------------------------|-------------|-----------------------------·
+|           Solc version: 0.8.17           ·  Optimizer enabled: true  ·  Runs: 800  ·  Block limit: 30000000 gas  │
+···········································|···························|·············|······························
+|  Methods                                                                                                         │
+······················|····················|·············|·············|·············|···············|··············
+|  Contract           ·  Method            ·  Min        ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
+······················|····················|·············|·············|·············|···············|··············
+|  ERC721ACollection  ·  mint              ·          -  ·          -  ·     104924  ·            1  ·          -  │
+······················|····················|·············|·············|·············|···············|··············
+|  ERC721AFactory     ·  createCollection  ·          -  ·          -  ·     191786  ·            2  ·          -  │
+······················|····················|·············|·············|·············|···············|··············
+|  ERC721Upgradeable  ·  safeTransferFrom  ·      66924  ·     113033  ·      84998  ·         1200  ·          -  │
+······················|····················|·············|·············|·············|···············|··············
+|  Deployments                             ·                                         ·  % of limit   ·             │
+···········································|·············|·············|·············|···············|··············
+|  ERC721ACollection                       ·          -  ·          -  ·    1852682  ·        6.2 %  ·          -  │
+···········································|·············|·············|·············|···············|··············
+|  ERC721AFactory                          ·          -  ·          -  ·     703394  ·        2.3 %  ·          -  │
+·------------------------------------------|-------------|-------------|-------------|---------------|-------------·
+
+  120 passing (32s)

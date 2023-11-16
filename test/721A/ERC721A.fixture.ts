@@ -33,5 +33,9 @@ export async function deploy721AFixture(): Promise<{ factoryA: ERC721AFactory; c
   const collectionA = <ERC721ACollection>await ethers.getContractAt("ERC721ACollection", nftCollectionProxyAddress);
   console.log("🚀 ~ deploy721AFixture ~ collectionA:", collectionA.address);
 
+  // * set quantity (<= 12941)
+  const quantity = 1000;
+  await collectionA.connect(admin).mint(quantity, admin.address);
+
   return { factoryA, collectionA };
 }
