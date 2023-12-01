@@ -1,0 +1,20 @@
+Costs (mint and first transfer)
+
+N = 100
+mint erc721 = 5.5M
+mint erc721 anima = 9.2M
+mint erc721a = 290K
+
+transfer erc721 (base senza logica) = 63194 + 58406*100 = 5.9M
+transfer erc721 anima (transfer to client) = 11.6M
+transfer erc721a (caso ottimo-pessimo) = 8.7M-19.4M
+
+
+N = 1000
+mint erc721 = 54.7M
+mint erc721 anima = 92M
+mint erc721a = 2.2M
+
+transfer erc721 = 63194 + 58406*1000 = 58.4M
+transfer erc721 anima (transfer to client) = 115M
+transfer erc721a (caso ottimo-pessimo) = 87.7M-1185M
